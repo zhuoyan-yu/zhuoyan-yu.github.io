@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name</title>
+  <meta
+    name="description"
+    content="Personal academic homepage of Your Name, undergraduate student in Computer Science at NYU Shanghai."
+  />
+  <style>
+    :root {
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #1d4ed8;
+      --accent-soft: #dbeafe;
+      --border: #e5e7eb;
+      --shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
+      --maxw: 900px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .hero {
+      background: linear-gradient(180deg, #eef4ff 0%, #f7f8fb 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 64px 0 36px;
+    }
+
+    .hero h1 {
+      margin: 0 0 10px;
+      font-size: 2.8rem;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .intro {
+      max-width: 760px;
+      margin: 0;
+      font-size: 1.05rem;
+    }
+
+    .nav {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .nav a {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.8);
+      color: var(--text);
+      font-size: 0.95rem;
+    }
+
+    .nav a:hover {
+      background: white;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 30px 0 60px;
+    }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      padding: 26px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.3rem;
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    p:last-child,
+    ul:last-child,
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .pub-title,
+    .project-title {
+      font-weight: 600;
+    }
+
+    .meta,
+    .note,
+    .footer-text {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 10px;
+      border: 1px solid var(--accent);
+      background: var(--accent);
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      text-decoration: none;
+      opacity: 0.95;
+    }
+
+    .button.secondary {
+      background: white;
+      color: var(--accent);
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .tag-list li {
+      margin: 0;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: #1e3a8a;
+      font-size: 0.95rem;
+      border: 1px solid #bfdbfe;
+    }
+
+    footer {
+      padding: 8px 0 40px;
+      text-align: center;
+    }
+
+    @media (max-width: 700px) {
+      .hero {
+        padding-top: 50px;
+      }
+
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      section {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Your Name</h1>
+      <p class="subtitle">
+        Undergraduate Student in Computer Science, NYU Shanghai
+      </p>
+      <p class="intro">
+        I am an undergraduate student majoring in Computer Science at NYU Shanghai.
+        I am broadly interested in artificial intelligence and plan to pursue graduate
+        study in AI-related fields. My recent work includes a paper on LLMs for code,
+        and I am currently exploring research directions across language, code, vision,
+        and multimodal AI.
+      </p>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#interests">Current Interests</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Selected Projects</a>
+        <a href="#coursework">Coursework</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am an undergraduate student in Computer Science at NYU Shanghai.
+        I am broadly interested in artificial intelligence, machine learning,
+        and the development of reliable and useful AI systems.
+      </p>
+      <p>
+        My coursework has included machine learning, natural language processing,
+        and computer vision. Recently, I worked on a paper related to LLMs for code,
+        which sparked my interest in how foundation models can support reasoning,
+        language, and software-related tasks.
+      </p>
+      <p>
+        I am still exploring my long-term research direction, and I am especially
+        interested in opportunities that combine strong technical depth with practical impact.
+      </p>
+    </section>
+
+    <section id="interests">
+      <h2>Current Interests</h2>
+      <ul class="tag-list">
+        <li>Artificial Intelligence</li>
+        <li>Machine Learning</li>
+        <li>Large Language Models</li>
+        <li>Natural Language Processing</li>
+        <li>LLMs for Code</li>
+        <li>Multimodal AI (exploratory)</li>
+      </ul>
+      <p class="note" style="margin-top: 14px;">
+        This section is meant to reflect interests I am currently exploring,
+        rather than areas of established expertise.
+      </p>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <ul>
+        <li>
+          <span class="pub-title">
+            CodeFORGE: Framework for Orchestrated Rare Programming Language Generation and Evaluation
+          </span><br />
+          <span class="meta">
+            Add full author list here. To appear at IJCNN 2026.
+          </span><br />
+          <span class="meta">
+            Camera-ready in preparation.
+          </span><br />
+          <!-- Replace # with your actual links when ready -->
+          <a href="#">Paper</a>
+          <span class="meta"> · </span>
+          <a href="#">Project Page / Repository</a>
+        </li>
+      </ul>
+      <p class="note" style="margin-top: 14px;">
+        Since the repository is under an organization account, it is perfectly fine to link to it here.
+        The publication is still your work regardless of which GitHub account hosts the code.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Selected Projects</h2>
+      <ul>
+        <li>
+          <span class="project-title">Computer Vision Course Project</span><br />
+          <span class="meta">
+            Briefly describe the problem, your approach, and what you learned in 1–2 sentences.
+            You do not need a polished public repository here; a concise description is enough.
+          </span>
+        </li>
+        <li>
+          <span class="project-title">More projects coming soon</span><br />
+          <span class="meta">
+            I am currently organizing project materials and code for public release.
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="coursework">
+      <h2>Selected Coursework</h2>
+      <ul>
+        <li>Machine Learning</li>
+        <li>Natural Language Processing</li>
+        <li>Computer Vision</li>
+      </ul>
+    </section>
+
+    <section id="cv">
+      <h2>CV</h2>
+      <p>
+        A PDF version of my CV is available below.
+      </p>
+      <div class="button-row">
+        <a class="button" href="cv.pdf" target="_blank" rel="noopener">View CV</a>
+        <a class="button secondary" href="cv.pdf" download>Download CV</a>
+      </div>
+      <p class="note" style="margin-top: 14px;">
+        Put a file named <code>cv.pdf</code> in the same folder as this <code>index.html</code>.
+        If you later move it into a folder such as <code>assets/</code>, change both links to
+        <code>assets/cv.pdf</code>.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your_email@nyu.edu">your_email@nyu.edu</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+      <!-- You can add Google Scholar, LinkedIn, or Twitter/X here later if you want -->
+    </section>
+  </main>
+
+  <footer class="container">
+    <p class="footer-text">
+      Last updated: April 2026
+    </p>
+  </footer>
+</body>
+</html>
