@@ -60,19 +60,16 @@ and maintenance notes immediately before the v3 update, with SHA-256 checksums.
 
 The domain was purchased through Cloudflare on September 21, 2026. The website
 stays in this repository on GitHub Pages; Cloudflare manages registration and DNS.
-The local `CNAME` file, canonical URL, and Open Graph URLs are prepared for
-`https://zhuoyanyu.com/`. These local changes have not yet been published.
+The redesigned homepage and v3 PDFs were published on September 21, 2026.
+`CNAME`, the canonical URL, and Open Graph URLs use `https://zhuoyanyu.com/`.
 
-1. In GitHub account Settings → Pages, verify ownership using the TXT record
-   GitHub supplies. Keep the verification record in place.
-2. In this repository's Settings → Pages → Custom domain, enter `zhuoyanyu.com`
-   and save before adding the routing DNS records. Keep the existing Pages
-   publishing source. If GitHub creates a CNAME commit, incorporate it before
-   publishing the local redesign.
-3. In Cloudflare DNS, add the records below with TTL Auto and proxy status
-   **DNS only**. Preserve the GitHub verification TXT record and any unrelated
-   records. Resolve conflicts with existing parking records before adding A/CNAME
-   entries; do not create wildcard records.
+- GitHub account Settings → Pages: ownership of `zhuoyanyu.com` is verified.
+  Keep the `_github-pages-challenge-zhuoyan-yu` TXT record in Cloudflare.
+- Repository Settings → Pages: custom domain `zhuoyanyu.com`, publishing from
+  `main` / root, with **Enforce HTTPS** enabled.
+- Cloudflare uses the following records with TTL Auto and **DNS only**.
+  Preserve the verification TXT record and any unrelated records; do not add
+  wildcard records.
 
    | Type | Name | Content |
    | --- | --- | --- |
@@ -82,16 +79,18 @@ The local `CNAME` file, canonical URL, and Open Graph URLs are prepared for
    | A | @ | 185.199.111.153 |
    | CNAME | www | zhuoyan-yu.github.io |
 
-4. Publish the reviewed homepage and attachments, including the local `CNAME`.
-5. Wait for DNS and the certificate, enable Enforce HTTPS, then check both the
-   bare domain and `www`. GitHub documents propagation and certificate setup as
-   potentially taking up to 24 hours each.
-6. Check the old github.io address, internal links, PDF downloads, and mobile
-   layout. Update the address in the current editable resume source when available;
-   the supplied v3 PDFs are preserved unchanged for now.
+Verified live: the HTTPS homepage loads, HTTP and the old github.io homepage
+redirect to it, every local asset and PDF link returns HTTP 200, and both CV
+downloads match their source PDFs byte for byte. The archive and this README
+return HTTP 404 on the published site. Desktop and 390px layouts were checked.
+The `www` record is visible through public DNS; its HTTPS certificate is still
+being checked after the initial setup.
 
-External setup is pending. No GitHub Pages settings or Cloudflare DNS records
-have been changed by this local preparation.
+To publish future changes, commit and push to `main`; GitHub Pages builds the
+site automatically. Keep `CNAME` and `_config.yml` in place. Cloudflare does not
+need to be changed when editing homepage content. Update the website address in
+the current editable resume source when available; the supplied v3 PDFs remain
+unchanged, and their old homepage link redirects to the new domain.
 
 Official guides:
 - https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
