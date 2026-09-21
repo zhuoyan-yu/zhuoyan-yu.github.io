@@ -83,8 +83,9 @@ Verified live: the HTTPS homepage loads, HTTP and the old github.io homepage
 redirect to it, every local asset and PDF link returns HTTP 200, and both CV
 downloads match their source PDFs byte for byte. The archive and this README
 return HTTP 404 on the published site. Desktop and 390px layouts were checked.
-The `www` record is visible through public DNS; its HTTPS certificate is still
-being checked after the initial setup.
+GitHub reports a successful DNS check. Both `www` and the apex domain have valid
+HTTPS; `https://www.zhuoyanyu.com/` returns a permanent 301 redirect to
+`https://zhuoyanyu.com/`.
 
 To publish future changes, commit and push to `main`; GitHub Pages builds the
 site automatically. Keep `CNAME` and `_config.yml` in place. Cloudflare does not
