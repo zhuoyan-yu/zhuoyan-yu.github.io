@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zhuoyan Yu — LLMs, Code & Evaluation</title>
+  <meta name="description" content="Zhuoyan Yu is a computer science undergraduate at NYU Shanghai working on LLM code generation, test evaluation, and computer vision. First author of CodeFORGE, IJCNN 2026.">
+  <meta name="theme-color" content="#fafbf8">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zhuoyan Yu — Research & Projects">
+  <meta property="og:description" content="Computer science at NYU Shanghai. Research in LLM code generation, test evaluation, and computer vision.">
+  <meta property="og:image" content="https://zhuoyan-yu.github.io/assets/codeforge-framework.png">
+  <meta property="og:url" content="https://zhuoyan-yu.github.io/">
+  <link rel="canonical" href="https://zhuoyan-yu.github.io/">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="#about" aria-label="Zhuoyan Yu, back to introduction">zy<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#publications">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a class="nav-cv" href="cv.pdf">CV <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="shell">
+    <section class="intro" id="about" aria-labelledby="name">
+      <div class="intro-main">
+        <p class="eyebrow">Undergraduate · NYU Shanghai</p>
+        <h1 id="name">Zhuoyan Yu<span class="name-period">.</span></h1>
+        <p class="intro-lead">I work on language models for code<br class="desktop-break"> and how we evaluate them.</p>
+        <p class="intro-copy">My research with the Serendipity Research Group focuses on code generation and LLM-generated tests. I also work on computer vision, with experience in medical imaging and multimodal systems.</p>
+        <div class="social-links" aria-label="Contact and profiles">
+          <a href="mailto:zy3077@nyu.edu">Email <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/zhuoyan-yu">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="cv.pdf">Full CV <span class="file-type">PDF</span></a>
+          <a href="resume.pdf">Résumé <span class="file-type">1 page</span></a>
+        </div>
+      </div>
+      <aside class="intro-aside" aria-label="Education and research interests">
+        <div class="aside-block">
+          <p class="eyebrow">Education</p>
+          <p class="aside-title">B.S. in Computer Science</p>
+          <p>NYU Shanghai<br>Expected May 2027</p>
+        </div>
+        <div class="aside-block" id="interests">
+          <p class="eyebrow">Research interests</p>
+          <ul class="interest-list"><li>LLMs for code</li><li>Evaluation & reliability</li><li>Computer vision</li></ul>
+        </div>
+        <p class="location"><span class="location-dot" aria-hidden="true"></span>Shanghai, China</p>
+      </aside>
+    </section>
+    <section class="content-section" id="publications" aria-labelledby="publications-title">
+      <div class="section-heading"><h2 id="publications-title">Selected research</h2><span class="section-note">Publication</span></div>
+      <article class="research-item" aria-labelledby="codeforge-title">
+        <figure class="research-figure">
+          <a class="figure-link" href="CodeFORGE.pdf#page=1" aria-label="Read the CodeFORGE paper, including this pipeline diagram">
+            <img src="assets/codeforge-preview.png" width="657" height="534" alt="CodeFORGE diagram: separate solution and test generation followed by model-based verification.">
+          </a>
+          <figcaption>Separate generation. Executable verification.</figcaption>
+        </figure>
+        <div class="research-copy">
+          <div class="item-kicker"><span class="venue">IJCNN 2026</span><span>LLMs for code</span></div>
+          <h3 id="codeforge-title"><a href="CodeFORGE.pdf">CodeFORGE: Framework for Orchestrated Rare Programming Language Generation and Evaluation</a></h3>
+          <p class="authors"><strong>Zhuoyan Yu</strong>, Minghao Shao, Yijun Shen, Yichen Zhao, Boyuan Chen, Yik-Cheung Tam, Muhammad Shafique</p>
+          <p>An executable benchmark of <strong>1,196 verified tasks across 12 rare and legacy languages</strong>. Separates solution synthesis from test generation and uses a Docker-based verification pipeline with model cascading.</p>
+          <div class="resource-links"><a href="CodeFORGE.pdf">Paper <span aria-hidden="true">↗</span></a><a href="https://github.com/NYU-Serendipity-LLM4Coding/CodeFORGE">Code <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </article>
+      <details class="framework-details">
+        <summary>Explore the CodeFORGE framework <span aria-hidden="true">+</span></summary>
+        <figure>
+          <a href="CodeFORGE.pdf#page=4" aria-label="Read the CodeFORGE framework in the paper"><img src="assets/codeforge-framework.png" width="1518" height="420" loading="lazy" alt="CodeFORGE framework: task specification, candidate generation, sandbox verification, benchmark construction, and model evaluation."></a>
+          <figcaption>Framework overview from the paper, Figure 2. Candidate tasks pass through isolated execution and feedback-driven verification before entering the benchmark.</figcaption>
+        </figure>
+      </details>
+    </section>
+    <section class="content-section" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading"><h2 id="experience-title">Research & experience</h2><span class="section-note">2025 — present</span></div>
+      <div class="experience-list">
+        <article class="experience-item">
+          <div class="experience-date">Jun 2026 — present<span class="status">Ongoing research</span></div>
+          <div><h3>LLM-Generated Test Evaluation</h3>
+            <p class="affiliation">Serendipity Research Group · NYU Shanghai</p>
+            <p>Studying how same-model and cross-model tests expose faults in fixed code candidates, with and without access to candidate code. Built a three-model pipeline with reference-consensus oracles and isolated execution.</p>
+            <p class="scope-note">Completed a study over 60 frozen LiveCodeBench problems; fault exposure and structural coverage are analyzed separately.</p>
+          </div>
+        </article>
+        <article class="experience-item">
+          <div class="experience-date">May — Aug 2026<span class="role-label">Research internship</span></div>
+          <div><h3>Ant Technologies U.S.</h3>
+            <p class="affiliation">Algorithm Engineer Intern (Research) · Medical and Healthcare AI Lab</p>
+            <p>Developed nnU-Net v2 pipelines for cerebral microbleed and lacune detection in multimodal MRI. Worked on spatial alignment, data validation, controlled ablations, and lesion-level evaluation.</p>
+          </div>
+        </article>
+        <article class="experience-item">
+          <div class="experience-date">Sep 2025 — Apr 2026<span class="role-label">Research assistant</span></div>
+          <div><h3>CodeFORGE</h3>
+            <p class="affiliation">Serendipity Research Fellowship · NYU Shanghai</p>
+            <p>Built benchmark generation and verification tooling for rare and legacy programming languages, including Docker-based pass@k evaluation, feedback-driven resampling, and API cost controls.</p>
+          </div>
+        </article>
+      </div>
+      <p class="section-endnote">Earlier research includes long-video understanding and chest X-ray interpretation. <a href="cv.pdf">See the full CV <span aria-hidden="true">↗</span></a></p>
+    </section>
+    <section class="content-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading"><h2 id="projects-title">Selected projects</h2><span class="section-note">Vision & multimodal systems</span></div>
+      <article class="project-item" aria-labelledby="mygo-title">
+        <figure class="project-figure">
+          <a class="figure-link" href="mygo-report.pdf#page=6" aria-label="View the MYGO qualitative comparison in the project report"><img src="assets/mygo-comparison.png" width="976" height="828" loading="lazy" alt="Qualitative examples from the MYGO report: baseline and MYGO generated images, conditioning depth, and predicted depth."></a>
+          <figcaption>Qualitative comparison · project report, Fig. 3</figcaption>
+        </figure>
+        <div><p class="item-kicker">Course project <span>Sep — Dec 2025</span></p>
+          <h3 id="mygo-title"><a href="mygo-report.pdf">MYGO: Geometry-Aware Depth ControlNet</a></h3>
+          <p>Exploring how depth representation affects image generation. MYGO combines raw depth, 16 ordinal layers, and occlusion boundaries into an 18-channel conditioning signal for Stable Diffusion 1.5 ControlNet.</p>
+          <p class="scope-note">Compared with a single-channel baseline on 50k COCO images under a matched 20k-step training budget.</p>
+          <div class="resource-links"><a href="mygo-report.pdf">Report <span aria-hidden="true">↗</span></a><a href="https://github.com/JosiahWayne/MYGO">Code <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </article>
+      <article class="project-item" aria-labelledby="figures-title">
+        <figure class="project-figure">
+          <img class="method-image" src="assets/figure-transcription.svg" width="600" height="390" loading="lazy" alt="Method illustration: OCR, segmentation, and visual language understanding convert paper figures into editable slide elements.">
+          <figcaption>Method illustration</figcaption>
+        </figure>
+        <div><p class="item-kicker">Research project <span>May — Aug 2025</span></p>
+          <h3 id="figures-title">Agentic Figure Transcription for Scientific Papers</h3>
+          <p>A pipeline that turns academic figures into editable PowerPoint slides. Combines OCR, SAM segmentation, region-level vision-language classification, and deterministic post-processing.</p>
+          <p class="scope-note">Research Assistant · CSDSE Department, NYU Shanghai</p>
+        </div>
+      </article>
+    </section>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div><p class="eyebrow">Get in touch</p><h2 id="contact-title">Let’s talk research.</h2>
+        <p>For research conversations and collaboration, email is the best way to reach me.</p>
+        <a class="email-link" href="mailto:zy3077@nyu.edu">zy3077@nyu.edu <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="cv-links" id="cv">
+        <a href="cv.pdf"><span>Full curriculum vitae</span><span>PDF ↗</span></a>
+        <a href="resume.pdf"><span>One-page résumé</span><span>PDF ↗</span></a>
+        <a href="https://github.com/zhuoyan-yu"><span>GitHub</span><span>↗</span></a>
+      </div>
+    </section>
+  </main>
+  <footer class="shell site-footer"><span>© 2026 Zhuoyan Yu</span><span>Updated September 18, 2026</span><a href="#about">Back to top ↑</a></footer>
+</body>
+</html>

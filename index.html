@@ -1,359 +1,159 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zhuoyan Yu</title>
-  <meta
-    name="description"
-    content="Personal academic homepage of Zhuoyan Yu, undergraduate student in Computer Science at NYU Shanghai."
-  />
-  <style>
-    :root {
-      --bg: #f7f8fb;
-      --card: #ffffff;
-      --text: #1f2937;
-      --muted: #6b7280;
-      --accent: #1d4ed8;
-      --accent-soft: #dbeafe;
-      --border: #e5e7eb;
-      --shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
-      --maxw: 900px;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      line-height: 1.7;
-      color: var(--text);
-      background: var(--bg);
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .container {
-      max-width: var(--maxw);
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    .hero {
-      background: linear-gradient(180deg, #eef4ff 0%, #f7f8fb 100%);
-      border-bottom: 1px solid var(--border);
-      padding: 64px 0 36px;
-    }
-
-    .hero h1 {
-      margin: 0 0 10px;
-      font-size: 2.8rem;
-      line-height: 1.15;
-      letter-spacing: -0.02em;
-    }
-
-    .subtitle {
-      margin: 0 0 16px;
-      color: var(--muted);
-      font-size: 1.05rem;
-    }
-
-    .intro {
-      max-width: 760px;
-      margin: 0;
-      font-size: 1.05rem;
-    }
-
-    .nav {
-      margin-top: 24px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .nav a {
-      display: inline-block;
-      padding: 8px 14px;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.8);
-      color: var(--text);
-      font-size: 0.95rem;
-    }
-
-    .nav a:hover {
-      background: white;
-      text-decoration: none;
-    }
-
-    main {
-      padding: 30px 0 60px;
-    }
-
-    section {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      box-shadow: var(--shadow);
-      padding: 26px;
-      margin-bottom: 20px;
-    }
-
-    h2 {
-      margin: 0 0 14px;
-      font-size: 1.3rem;
-      letter-spacing: -0.01em;
-    }
-
-    p {
-      margin: 0 0 12px;
-    }
-
-    p:last-child,
-    ul:last-child,
-    li:last-child {
-      margin-bottom: 0;
-    }
-
-    ul {
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 10px;
-    }
-
-    .pub-title,
-    .project-title {
-      font-weight: 600;
-    }
-
-    .meta,
-    .note,
-    .footer-text {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .button-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 12px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 10px 16px;
-      border-radius: 10px;
-      border: 1px solid var(--accent);
-      background: var(--accent);
-      color: white;
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    .button:hover {
-      text-decoration: none;
-      opacity: 0.95;
-    }
-
-    .button.secondary {
-      background: white;
-      color: var(--accent);
-    }
-
-    .tag-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .tag-list li {
-      margin: 0;
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: var(--accent-soft);
-      color: #1e3a8a;
-      font-size: 0.95rem;
-      border: 1px solid #bfdbfe;
-    }
-
-    footer {
-      padding: 8px 0 40px;
-      text-align: center;
-    }
-
-    @media (max-width: 700px) {
-      .hero {
-        padding-top: 50px;
-      }
-
-      .hero h1 {
-        font-size: 2.2rem;
-      }
-
-      section {
-        padding: 22px;
-      }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zhuoyan Yu — LLMs, Code & Evaluation</title>
+  <meta name="description" content="Zhuoyan Yu is a computer science undergraduate at NYU Shanghai working on LLM code generation, test evaluation, and computer vision. First author of CodeFORGE, IJCNN 2026.">
+  <meta name="theme-color" content="#fafbf8">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zhuoyan Yu — Research & Projects">
+  <meta property="og:description" content="Computer science at NYU Shanghai. Research in LLM code generation, test evaluation, and computer vision.">
+  <meta property="og:image" content="https://zhuoyanyu.com/assets/codeforge-framework.png">
+  <meta property="og:url" content="https://zhuoyanyu.com/">
+  <link rel="canonical" href="https://zhuoyanyu.com/">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-  <header class="hero">
-    <div class="container">
-      <h1>Zhuoyan Yu</h1>
-      <p class="subtitle">
-        Undergraduate Student in Computer Science, NYU Shanghai
-      </p>
-      <p class="intro">
-        I am an undergraduate student majoring in Computer Science at NYU Shanghai.
-        I am broadly interested in artificial intelligence and plan to pursue graduate
-        study in AI-related fields. My recent work includes a paper on LLMs for code,
-        and I am currently exploring research directions across language, code, vision,
-        and multimodal AI.
-      </p>
-
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#interests">Current Interests</a>
-        <a href="#publications">Publications</a>
-        <a href="#projects">Selected Projects</a>
-        <a href="#coursework">Coursework</a>
-        <a href="#cv">CV</a>
-        <a href="#contact">Contact</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="#about" aria-label="Zhuoyan Yu, back to introduction">zy<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#publications">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a class="nav-cv" href="cv.pdf">CV <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
-
-  <main class="container">
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        I am an undergraduate student in Computer Science at NYU Shanghai.
-        I am broadly interested in artificial intelligence, machine learning,
-        and the development of reliable and useful AI systems.
-      </p>
-      <p>
-        My coursework has included machine learning, natural language processing,
-        and computer vision. Recently, I worked on a paper related to LLMs for code,
-        which sparked my interest in how foundation models can support reasoning,
-        language, and software-related tasks.
-      </p>
-      <p>
-        I am still exploring my long-term research direction, and I am especially
-        interested in opportunities that combine strong technical depth with practical impact.
-      </p>
+  <main id="main" class="shell">
+    <section class="intro" id="about" aria-labelledby="name">
+      <div class="intro-main">
+        <p class="eyebrow">Undergraduate · NYU Shanghai</p>
+        <h1 id="name">Zhuoyan Yu<span class="name-period">.</span></h1>
+        <p class="intro-lead">I work on language models for code<br class="desktop-break"> and how we evaluate them.</p>
+        <p class="intro-copy">At NYU Shanghai, I work on code generation, LLM-generated tests, and behavior-preserving repair of research software. I also work on computer vision, with experience in medical imaging and multimodal systems.</p>
+        <div class="social-links" aria-label="Contact and profiles">
+          <a href="mailto:zy3077@nyu.edu">Email <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/zhuoyan-yu">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="cv.pdf">Full CV <span class="file-type">PDF</span></a>
+          <a href="resume.pdf">Résumé <span class="file-type">1 page</span></a>
+        </div>
+      </div>
+      <aside class="intro-aside" aria-label="Education and research interests">
+        <div class="aside-block">
+          <p class="eyebrow">Education</p>
+          <p class="aside-title">B.S. in Computer Science</p>
+          <p>NYU Shanghai<br>Expected May 2027</p>
+        </div>
+        <div class="aside-block" id="interests">
+          <p class="eyebrow">Research interests</p>
+          <ul class="interest-list"><li>LLMs for code</li><li>Evaluation & reliability</li><li>Computer vision</li></ul>
+        </div>
+        <p class="location"><span class="location-dot" aria-hidden="true"></span>Shanghai, China</p>
+      </aside>
     </section>
-
-    <section id="interests">
-      <h2>Current Interests</h2>
-      <ul class="tag-list">
-        <li>Artificial Intelligence</li>
-        <li>Machine Learning</li>
-        <li>LLMs for Code</li>
-        <li>Multimodal AI (exploratory)</li>
-      </ul>
-      <p class="note" style="margin-top: 14px;">
-        This section is meant to reflect interests I am currently exploring,
-        rather than areas of established expertise.
-      </p>
+    <section class="content-section" id="publications" aria-labelledby="publications-title">
+      <div class="section-heading"><h2 id="publications-title">Selected research</h2><span class="section-note">Publication</span></div>
+      <article class="research-item" aria-labelledby="codeforge-title">
+        <figure class="research-figure">
+          <a class="figure-link" href="CodeFORGE.pdf#page=1" aria-label="Read the CodeFORGE paper, including this pipeline diagram">
+            <img src="assets/codeforge-preview.png" width="657" height="534" alt="CodeFORGE diagram: separate solution and test generation followed by model-based verification.">
+          </a>
+          <figcaption>Separate generation. Executable verification.</figcaption>
+        </figure>
+        <div class="research-copy">
+          <div class="item-kicker"><span class="venue">IJCNN 2026</span><span>LLMs for code</span></div>
+          <h3 id="codeforge-title"><a href="CodeFORGE.pdf">CodeFORGE: Framework for Orchestrated Rare Programming Language Generation and Evaluation</a></h3>
+          <p class="authors"><strong>Zhuoyan Yu</strong>, Minghao Shao, Yijun Shen, Yichen Zhao, Boyuan Chen, Yik-Cheung Tam, Muhammad Shafique</p>
+          <p>An executable benchmark of <strong>1,196 verified tasks across 12 rare and legacy languages</strong>. Separates solution synthesis from test generation and uses a Docker-based verification pipeline with model cascading.</p>
+          <div class="resource-links"><a href="CodeFORGE.pdf">Paper <span aria-hidden="true">↗</span></a><a href="https://github.com/NYU-Serendipity-LLM4Coding/CodeFORGE">Code <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </article>
+      <details class="framework-details">
+        <summary>Explore the CodeFORGE framework <span aria-hidden="true">+</span></summary>
+        <figure>
+          <a href="CodeFORGE.pdf#page=4" aria-label="Read the CodeFORGE framework in the paper"><img src="assets/codeforge-framework.png" width="1518" height="420" loading="lazy" alt="CodeFORGE framework: task specification, candidate generation, sandbox verification, benchmark construction, and model evaluation."></a>
+          <figcaption>Framework overview from the paper, Figure 2. Candidate tasks pass through isolated execution and feedback-driven verification before entering the benchmark.</figcaption>
+        </figure>
+      </details>
     </section>
-
-    <section id="publications">
-      <h2>Publications</h2>
-      <ul>
-        <li>
-          <span class="pub-title">
-            CodeFORGE: Framework for Orchestrated Rare Programming Language Generation and Evaluation
-          </span><br />
-          <span class="meta">
-            Zhuoyan Yu, Minghao Shao, Yijun Shen, Yichen Zhao, Boyuan Chen, Yik-Cheung Tam, Muhammad Shafique
-          </span><br />
-          <span class="meta">
-            Camera-ready in preparation.
-          </span><br />
-          <!-- Replace # with your actual links when ready -->
-          <div class="button-row">
-            <a class="button secondary" href="https://github.com/NYU-Serendipity-LLM4Coding/CodeFORGE" target="_blank" rel="noopener">Code</a>
-            <a class="button secondary" href="CodeFORGE.pdf" target="_blank" rel="noopener">Paper</a>
+    <section class="content-section" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading"><h2 id="experience-title">Research & experience</h2><span class="section-note">2025 — present</span></div>
+      <div class="experience-list">
+        <article class="experience-item">
+          <div class="experience-date">Sep 2026 — present<span class="status">Ongoing research</span></div>
+          <div><h3>RepoRevive: Behavior-Preserving Repository Repair</h3>
+            <p class="affiliation">Advanced Capstone Project · NYU Shanghai</p>
+            <p>Building tooling for behavior-preserving repair of research code. Reconstructed historical and modern environments to compare model outputs, gradients, and one-step training updates during a PyTorch 1.4-to-2.8 migration.</p>
+            <p class="scope-note">An API-only migration ran all 14 configurations but preserved behavior in 10; a reference patch passed all 14 behavior checks.</p>
           </div>
-        </li>
-      </ul>
-    </section>
-
-    <section id="projects">
-      <h2>Selected Projects</h2>
-      <ul>
-        <li>
-          <span class="project-title">MYGO: Multi-Layer Depth and Occlusion Encoding for Geometry-Aware ControlNet</span><br />
-          <span class="meta">Computer Vision Course Project</span><br />
-          <span class="meta">
-            Developed MYGO, a geometry-aware depth ControlNet that replaces standard single-channel depth conditioning with raw depth, ordinal depth layers, and occlusion boundaries. The project improved image realism and often achieved stronger geometric consistency in depth-guided diffusion on a COCO-based setup.
-          </span>
-          <div class="button-row">
-            <a class="button secondary" href="https://github.com/JosiahWayne/MYGO" target="_blank" rel="noopener">Code</a>
-            <a class="button secondary" href="mygo-report.pdf" target="_blank" rel="noopener">Report</a>
+        </article>
+        <article class="experience-item">
+          <div class="experience-date">Jun 2026 — present<span class="status">Ongoing research</span></div>
+          <div><h3>LLM Test Reliability & Cross-Model Fault Detection</h3>
+            <p class="affiliation">Serendipity Research Group · NYU Shanghai</p>
+            <p>Studying how same-model and cross-model tests expose faults in fixed code candidates, with and without access to candidate code. Built isolated execution and a proxy oracle requiring agreement among three qualified reference programs.</p>
+            <p class="scope-note">A 36-problem expansion yielded 52 qualified faulty programs across 21 problems for strict test-strategy comparisons; fault detection and structural coverage are analyzed separately.</p>
           </div>
-        </li>
-        <li>
-          <span class="project-title">More projects coming soon</span><br />
-          <span class="meta">
-            I am currently organizing project materials and code for public release.
-          </span>
-        </li>
-      </ul>
+        </article>
+        <article class="experience-item">
+          <div class="experience-date">May — Aug 2026<span class="role-label">Research internship</span></div>
+          <div><h3>Ant Technologies U.S.</h3>
+            <p class="affiliation">Algorithm Engineer Intern (Research) · Medical and Healthcare AI Lab</p>
+            <p>Developed nnU-Net v2 pipelines for cerebral microbleed and lacune detection in multimodal MRI. Worked on spatial alignment, data validation, controlled ablations, and lesion-level evaluation.</p>
+          </div>
+        </article>
+        <article class="experience-item">
+          <div class="experience-date">Sep 2025 — Apr 2026<span class="role-label">Research assistant</span></div>
+          <div><h3>CodeFORGE</h3>
+            <p class="affiliation">Serendipity Research Fellowship · NYU Shanghai</p>
+            <p>Built benchmark generation and verification tooling for rare and legacy programming languages, including Docker-based pass@k evaluation, feedback-driven resampling, and API cost controls.</p>
+          </div>
+        </article>
+      </div>
+      <p class="section-endnote">Earlier research includes long-video understanding and chest X-ray interpretation. <a href="cv.pdf">See the full CV <span aria-hidden="true">↗</span></a></p>
     </section>
-
-    <section id="coursework">
-      <h2>Selected Coursework</h2>
-      <ul>
-        <li>Machine Learning</li>
-        <li>Natural Language Processing</li>
-        <li>Computer Vision</li>
-      </ul>
+    <section class="content-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading"><h2 id="projects-title">Selected projects</h2><span class="section-note">Vision & multimodal systems</span></div>
+      <article class="project-item" aria-labelledby="mygo-title">
+        <figure class="project-figure">
+          <a class="figure-link" href="mygo-report.pdf#page=6" aria-label="View the MYGO qualitative comparison in the project report"><img src="assets/mygo-comparison.png" width="976" height="828" loading="lazy" alt="Qualitative examples from the MYGO report: baseline and MYGO generated images, conditioning depth, and predicted depth."></a>
+          <figcaption>Qualitative comparison · project report, Fig. 3</figcaption>
+        </figure>
+        <div><p class="item-kicker">Course project <span>Sep — Dec 2025</span></p>
+          <h3 id="mygo-title"><a href="mygo-report.pdf">MYGO: Geometry-Aware Depth ControlNet</a></h3>
+          <p>Exploring how depth representation affects image generation. Co-designed an 18-channel conditioning signal for Stable Diffusion 1.5 ControlNet, combining raw depth, 16 ordinal layers, and occlusion boundaries.</p>
+          <p class="scope-note">Compared with a single-channel baseline on 50k COCO images under a matched 20k-step training budget.</p>
+          <div class="resource-links"><a href="mygo-report.pdf">Report <span aria-hidden="true">↗</span></a><a href="https://github.com/JosiahWayne/MYGO">Code <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </article>
+      <article class="project-item" aria-labelledby="figures-title">
+        <figure class="project-figure">
+          <img class="method-image" src="assets/figure-transcription.svg" width="600" height="390" loading="lazy" alt="Method illustration: OCR, segmentation, and visual language understanding convert paper figures into editable slide elements.">
+          <figcaption>Method illustration</figcaption>
+        </figure>
+        <div><p class="item-kicker">Research project <span>May — Aug 2025</span></p>
+          <h3 id="figures-title">Agentic Figure Transcription for Scientific Papers</h3>
+          <p>A prototype that turns academic figures into editable PowerPoint slides. Combines OCR, SAM segmentation, region-level vision-language classification, and recursive segmentation of small objects.</p>
+          <p class="scope-note">Research Assistant · CSDSE Department, NYU Shanghai</p>
+        </div>
+      </article>
     </section>
-
-    <section id="cv">
-      <h2>CV</h2>
-      <p>
-        A PDF version of my CV is available below.
-      </p>
-      <div class="button-row">
-        <a class="button" href="cv.pdf" target="_blank" rel="noopener">View CV</a>
-        <a class="button secondary" href="cv.pdf" download>Download CV</a>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div><p class="eyebrow">Get in touch</p><h2 id="contact-title">Let’s talk research.</h2>
+        <p>For research conversations and collaboration, email is the best way to reach me.</p>
+        <a class="email-link" href="mailto:zy3077@nyu.edu">zy3077@nyu.edu <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="cv-links" id="cv">
+        <a href="cv.pdf"><span>Full curriculum vitae</span><span>PDF ↗</span></a>
+        <a href="resume.pdf"><span>One-page résumé</span><span>PDF ↗</span></a>
+        <a href="https://github.com/zhuoyan-yu"><span>GitHub</span><span>↗</span></a>
       </div>
     </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:zy3077@nyu.edu">zy3077@nyu.edu</a></p>
-      <p>GitHub: <a href="https://github.com/zhuoyan-yu">github.com/zhuoyan-yu</a></p>
-      <!-- You can add Google Scholar, LinkedIn, or Twitter/X here later if you want -->
-    </section>
   </main>
-
-  <footer class="container">
-    <p class="footer-text">
-      Last updated: April 2026
-    </p>
-  </footer>
+  <footer class="shell site-footer"><span>© 2026 Zhuoyan Yu</span><span>Updated September 21, 2026</span><a href="#about">Back to top ↑</a></footer>
 </body>
 </html>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="390" viewBox="0 0 600 390" role="img" aria-labelledby="title desc">
+  <title id="title">From a scientific figure to editable slides</title>
+  <desc id="desc">A schematic of figure transcription: OCR, segmentation, and visual language understanding turn a paper figure into editable slide elements. This is a method illustration, not an experimental result.</desc>
+  <rect width="600" height="390" fill="#f2f4ee"/>
+  <g fill="none" stroke="#cbd4c9" stroke-width="2">
+    <rect x="42" y="70" width="200" height="240" rx="5" fill="#fff"/>
+    <rect x="357" y="95" width="202" height="190" rx="5" fill="#fff"/>
+  </g>
+  <g stroke="#c4cec3" stroke-width="5" stroke-linecap="round"><path d="M66 95h120M66 109h154M66 273h130M66 287h100"/></g>
+  <g stroke="#779283" stroke-width="2" fill="#dae5dc">
+    <rect x="68" y="140" width="60" height="38" rx="4"/>
+    <rect x="157" y="140" width="60" height="38" rx="4"/>
+    <rect x="112" y="212" width="60" height="30" rx="4"/>
+    <path d="M98 180v14h44v16M187 180v14h-45" fill="none"/>
+    <rect x="378" y="150" width="64" height="40" rx="4"/>
+    <rect x="475" y="150" width="64" height="40" rx="4"/>
+    <rect x="427" y="226" width="64" height="30" rx="4"/>
+    <path d="M410 192v16h49v16M507 192v16h-48" fill="none"/>
+  </g>
+  <g fill="#315c4b" font-family="Arial,sans-serif" text-anchor="middle">
+    <text x="300" y="144" font-size="13" letter-spacing="1">OCR</text>
+    <text x="300" y="166" font-size="13" letter-spacing="1">SAM</text>
+    <text x="300" y="188" font-size="13" letter-spacing="1">VLM</text>
+    <text x="142" y="340" font-size="17">Paper figure</text>
+    <text x="458" y="340" font-size="17">Editable elements</text>
+  </g>
+  <path d="M266 218h64m-8-8 10 8-10 8" fill="none" stroke="#315c4b" stroke-width="2.5"/>
+  <rect x="373" y="145" width="74" height="50" fill="none" stroke="#315c4b" stroke-dasharray="4 4"/>
+  <g fill="#fff" stroke="#315c4b"><rect x="370" y="142" width="6" height="6"/><rect x="444" y="142" width="6" height="6"/><rect x="370" y="192" width="6" height="6"/><rect x="444" y="192" width="6" height="6"/></g>
+  <path d="M380 123h112" stroke="#c4cec3" stroke-width="5" stroke-linecap="round"/>
+</svg>

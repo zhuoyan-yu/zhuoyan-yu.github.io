@@ -1,0 +1,6 @@
+# Keep snapshots and maintenance notes out of the GitHub Pages build.
+exclude:
+  - _archive
+  - .preview
+  - README.md
+  - start-preview.cmd
